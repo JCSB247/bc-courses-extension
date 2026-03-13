@@ -1,6 +1,7 @@
 table 50100 "SANBA Course"
 {
     Caption = 'Course';
+    DataCaptionFields = "No.", Description;
     DataClassification = CustomerContent;
 
     fields
