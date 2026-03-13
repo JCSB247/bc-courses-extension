@@ -4,6 +4,7 @@ page 50100 "SANBA Course List"
     ApplicationArea = All;
     UsageCategory = Lists;
     SourceTable = "SANBA Course";
+    CardPageId = "SANBA Course Card";
     Caption = 'SANBA Courses';
 
     layout
@@ -16,7 +17,7 @@ page 50100 "SANBA Course List"
                 {
                     ApplicationArea = All;
                 }
-                field(Description; Rec.Description)
+                field("Description"; Rec."Description")
                 {
                     ApplicationArea = All;
                 }
