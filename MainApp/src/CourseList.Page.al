@@ -3,6 +3,7 @@ page 50100 "SANBA Course List"
     PageType = List;
     ApplicationArea = All;
     UsageCategory = Lists;
+    Editable = false;
     SourceTable = "SANBA Course";
     CardPageId = "SANBA Course Card";
     Caption = 'SANBA Courses';
