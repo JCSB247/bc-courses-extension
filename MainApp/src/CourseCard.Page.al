@@ -10,13 +10,26 @@ page 50101 "SANBA Course Card"
     {
         area(Content)
         {
-            field("No."; Rec."No.")
+            group(General)
             {
-                ApplicationArea = All;
+                field("No."; Rec."No.")
+                {
+                    ApplicationArea = All;
+                }
+                field(Description; Rec.Description)
+                {
+                    ApplicationArea = All;
+                }
+                field("No. Series"; Rec."No. Series")
+                {
+                    ApplicationArea = All;
+                }
             }
-            field(Description; Rec.Description)
+            part(Editions; "SANBA Course Edition Subpage")
             {
+                Caption = 'Edition Subage List';
                 ApplicationArea = All;
+                SubPageLink = "Course No." = field("No.");
             }
         }
     }
