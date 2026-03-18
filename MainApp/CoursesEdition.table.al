@@ -12,7 +12,7 @@ table 50102 "SANBA Course Edition"
             DataClassification = CustomerContent;
             TableRelation = "SANBA Course";
         }
-        field(2; "No."; Code[20])
+        field(2; "No."; Integer)
         {
             Caption = 'No.';
             DataClassification = CustomerContent;
@@ -41,4 +41,16 @@ table 50102 "SANBA Course Edition"
             Clustered = true;
         }
     }
+    trigger OnInsert()
+    var
+        CourseEdition: Record "SANBA Course Edition";
+    begin
+        if "No." = 0 then begin
+            CourseEdition.SetRange("Course No.", "Course No.");
+            if CourseEdition.FindLast() then
+                "No." := CourseEdition."No." + 1
+            else
+                "No." := 1;
+        end;
+    end;
 }

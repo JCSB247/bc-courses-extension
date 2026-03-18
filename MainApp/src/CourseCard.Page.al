@@ -27,7 +27,7 @@ page 50101 "SANBA Course Card"
             }
             part(Editions; "SANBA Course Edition Subpage")
             {
-                Caption = 'Edition Subage List';
+                Caption = 'Course Editions';
                 ApplicationArea = All;
                 SubPageLink = "Course No." = field("No.");
             }
