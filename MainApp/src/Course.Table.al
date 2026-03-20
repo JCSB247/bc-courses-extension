@@ -32,6 +32,11 @@ table 50100 "SANBA Course"
             Editable = false;
             TableRelation = "No. Series";
         }
+        field(4; Type; Enum "SANBA Course Type")
+        {
+            Caption = 'Type';
+            DataClassification = CustomerContent;
+        }
     }
     keys
     {

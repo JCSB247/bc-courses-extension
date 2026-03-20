@@ -24,6 +24,10 @@ page 50101 "SANBA Course Card"
                 {
                     ApplicationArea = All;
                 }
+                field(Type; Rec.Type)
+                {
+                    ApplicationArea = All;
+                }
             }
             part(Editions; "SANBA Course Edition Subpage")
             {
