@@ -37,6 +37,11 @@ table 50100 "SANBA Course"
             Caption = 'Type';
             DataClassification = CustomerContent;
         }
+        field(5; Blocked; Enum "SANBA Course Blocked")
+        {
+            Caption = 'Blocked';
+            DataClassification = CustomerContent;
+        }
     }
     keys
     {
