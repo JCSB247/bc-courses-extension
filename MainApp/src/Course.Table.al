@@ -55,4 +55,15 @@ table 50100 "SANBA Course"
             "No. Series" := SetupMgt.GetCourseNos();
         end;
     end;
+
+    procedure AssistEdit(OldCourse: Record "SANBA Course"): Boolean
+    var
+        SetupMgt: Codeunit "SANBA Courses Setup Mgt.";
+        NoSeries: Codeunit "No. Series";
+    begin
+        if NoSeries.LookupRelatedNoSeries(SetupMgt.GetCourseNos(), OldCourse."No. Series", "No. Series") then begin
+            "No." := NoSeries.GetNextNo("No. Series");
+            exit(true);
+        end;
+    end;
 }

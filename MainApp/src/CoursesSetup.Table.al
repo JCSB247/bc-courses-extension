@@ -25,5 +25,9 @@ table 50101 "SANBA Courses Setup"
             Clustered = true;
         }
     }
+    trigger OnDelete()
+    begin
+        Error('No se puede eliminar la configuración de cursos');
+    end;
 
 }

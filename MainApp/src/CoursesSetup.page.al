@@ -5,6 +5,8 @@ page 50102 "SANBA Courses Setup"
     UsageCategory = Administration;
     SourceTable = "SANBA Courses Setup";
     Caption = 'SANBA Courses Setup';
+    InsertAllowed = false;
+    DeleteAllowed = false;
 
     layout
     {
@@ -20,4 +22,11 @@ page 50102 "SANBA Courses Setup"
             }
         }
     }
+    trigger OnOpenPage()
+    begin
+        if not Rec.Get() then begin
+            Rec.Init();
+            Rec.Insert();
+        end;
+    end;
 }
