@@ -51,8 +51,11 @@ table 50100 "SANBA Course"
         NoSeries: Codeunit "No. Series";
     begin
         if "No." = '' then begin
-            "No." := NoSeries.GetNextNo(SetupMgt.GetCourseNos());
             "No. Series" := SetupMgt.GetCourseNos();
+            if NoSeries.AreRelated(SetupMgt.GetCourseNos(), xRec."No. Series") then
+                "No. Series" := xRec."No. Series";
+            "No." := NoSeries.GetNextNo("No. Series");
+
         end;
     end;
 
