@@ -61,9 +61,12 @@ page 50107 "SANBA Course Journal Lines"
                 PromotedCategory = Process;
 
                 trigger OnAction()
+                var
+                    PostLine: Codeunit "SANBA Course Journal Post Line";
                 begin
                     //llamamos a la postline CodeUnit
-                    Message('Post no implementado aún.');
+                    PostLine.PostAll(Rec."Journal Batch Name");
+                    CurrPage.Update();
                 end;
             }
         }
