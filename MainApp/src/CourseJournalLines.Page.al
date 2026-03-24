@@ -1,6 +1,6 @@
 page 50107 "SANBA Course Journal Lines"
 {
-    Caption = 'Course Journal';
+    Caption = 'SANBA Course Journal';
     PageType = Worksheet;
     ApplicationArea = All;
     UsageCategory = Tasks;
