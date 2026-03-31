@@ -24,4 +24,14 @@ codeunit 50102 "SANBA Sales Post Subscriber"
         JournalLine.Insert();
         PostLine.Run(JournalLine);
     end;
+
+    local procedure GetNextLineNo(BatchName: Code[10]): Integer
+    var
+        JournalLine: Record "SANBA Course Journal Line";
+    begin
+        JournalLine.SetRange("Journal Batch Name", BatchName);
+        if JournalLine.FindLast() then
+            exit(JournalLine."Line No." + 1);
+        exit(1);
+    end;
 }
