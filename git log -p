@@ -1,0 +1,131 @@
+[33mcommit ecba65c7970f6e224239d8df49b5398786f27fc9[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Joan <jc7santosba@gmail.com>
+Date:   Tue Mar 31 13:15:37 2026 +0200
+
+    fix: calculate dynamic Line No. in Sales post subscriber
+
+[33mcommit 85124063f03f7dec8a8e4192e72a945fbcc2dae1[m
+Author: Joan <jc7santosba@gmail.com>
+Date:   Tue Mar 31 13:07:33 2026 +0200
+
+    feat: add sales integration - TableExt, PageExt, EventSubscriber on sales posting
+
+[33mcommit b0eb7b276d4f90c5af36c184bc5ce474c4d04b6b[m
+Author: Joan <jc7santosba@gmail.com>
+Date:   Tue Mar 24 11:34:02 2026 +0100
+
+    docs: add README with architecture and patterns documentation
+
+[33mcommit f6b910c1e7354ddff5e7405c934cee381fcb4286[m
+Author: Joan <jc7santosba@gmail.com>
+Date:   Mon Mar 23 12:16:53 2026 +0100
+
+    feat: complete posting flow - CourseJournalPostLine codeunit end-to-end
+
+[33mcommit c28914375b507690fba7b9470da73ce4711c8cec[m
+Author: Joan <jc7santosba@gmail.com>
+Date:   Sat Mar 21 16:10:41 2026 +0100
+
+    feat: add CourseJournalLines worksheet page with Post action
+
+[33mcommit aa1095ea1e30925f1c2a3fb017b088db662e693d[m
+Author: Joan <jc7santosba@gmail.com>
+Date:   Sat Mar 21 15:48:14 2026 +0100
+
+    feat: add CourseJournalLine table
+
+[33mcommit 5ed0ca9b9b9014177bb6294ca31e997b328e79f3[m
+Author: Joan <jc7santosba@gmail.com>
+Date:   Fri Mar 20 18:49:03 2026 +0100
+
+    feat: add CourseLedgerEntry table and page - immutable ledger pattern
+
+[33mcommit 12cfa5da7553cf8e833761369ada96d1939740ba[m
+Author: Joan <jc7santosba@gmail.com>
+Date:   Fri Mar 20 14:13:15 2026 +0100
+
+    feat: complete master data patterns - Blocked field, AssistEdit, No. Series BC24+ API
+
+[33mcommit a7f86e51dfe2ef0d9ada539ebee3e7cdf33b2f97[m
+Author: Joan <jc7santosba@gmail.com>
+Date:   Fri Mar 20 13:35:09 2026 +0100
+
+    feat: ikmprove with AreRelated pattern (BC24+ No. Series API
+
+[33mcommit 86542eb6d25250082e259e9b93f69263e2da8a88[m
+Author: Joan <jc7santosba@gmail.com>
+Date:   Fri Mar 20 13:17:33 2026 +0100
+
+    feat: add AssistEdit to Course an complete No. Series pattern
+
+[33mcommit da18b6ec58609988463c846977dea256e4a775a3[m
+Author: Joan <jc7santosba@gmail.com>
+Date:   Fri Mar 20 11:44:31 2026 +0100
+
+    feat: add CourseType enum and Type field to Course table
+
+[33mcommit 4a88e9ed4a264f631aa65a1fa90db7157751927e[m
+Author: Joan <jc7santosba@gmail.com>
+Date:   Wed Mar 18 14:05:30 2026 +0100
+
+    feat: add CourseEdition auto-increment No. on insert
+
+[33mcommit faffe7b7ae7083f1d0334dacf605dc297aa0e15d[m
+Author: Joan <jc7santosba@gmail.com>
+Date:   Wed Mar 18 13:24:49 2026 +0100
+
+    feat: add CourseEdition subpage embedded in CourseCard
+
+[33mcommit 133932ae80eb0bfa0e4189d7929692c6e03c0427[m
+Author: Joan <jc7santosba@gmail.com>
+Date:   Tue Mar 17 23:43:11 2026 +0100
+
+    fix: apply .gitignore rules
+
+[33mcommit c77e20acbceb2aae9b90eb607813813316286be0[m
+Author: Joan <jc7santosba@gmail.com>
+Date:   Tue Mar 17 23:25:50 2026 +0100
+
+    feat:add No. Series to Course table and CoursesSetup Mgt codeunit
+
+[33mcommit c3a62386f0e7ac1c65a02cf742e826acfcef786a[m
+Author: Joan <jc7santosba@gmail.com>
+Date:   Mon Mar 16 12:09:58 2026 +0100
+
+    feat: set Editable false on SANBA Course List
+
+[33mcommit 2a8e06a0ab0a6dd850ff4fb485b2fe3183d0a215[m
+Author: Joan <jc7santosba@gmail.com>
+Date:   Mon Mar 16 12:08:34 2026 +0100
+
+    chore: add .gitignore
+
+[33mcommit ac72142b94574f9b56f81515665bd54bdc1c3b14[m
+Author: Joan <jc7santosba@gmail.com>
+Date:   Sat Mar 14 00:09:16 2026 +0100
+
+    add DataCaptionFiels to  SANBA Course Table
+
+[33mcommit 09e3ea069bf3e490c091a15c14e565e4dc29c79e[m
+Author: Joan <jc7santosba@gmail.com>
+Date:   Fri Mar 13 13:52:26 2026 +0100
+
+    add SANBA Course Card and List Pages (50100, 50101)
+
+[33mcommit 696fded713569b4f274dd5123dbb21fbacce63d3[m
+Author: Joan <jc7santosba@gmail.com>
+Date:   Fri Mar 13 13:19:32 2026 +0100
+
+    add SANBA Course List page (50100)
+
+[33mcommit 1c67e17c8df07d81b6be20129f2267be19ce72af[m
+Author: Joan <jc7santosba@gmail.com>
+Date:   Fri Mar 13 13:10:43 2026 +0100
+
+    add SANBA Course table (50100)
+
+[33mcommit 491ffbeda0f2d87e14b16ead8b27d4c31afd1746[m
+Author: JCSB247 <141558252+JCSB247@users.noreply.github.com>
+Date:   Tue Mar 10 14:46:43 2026 +0100
+
+    Initial commit
